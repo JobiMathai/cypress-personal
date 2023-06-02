@@ -6,7 +6,7 @@ describe('test contact us on form via automation test store', () =>{
 
 
     it('should be able to submit a successful submission via contact us form', () => {
-        //cypress code
+        //cypress code sample
     
         cy.visit('https://www.automationteststore.com/')
         //cy.get('.info_links_footer > :nth-child(5) > a').click()
