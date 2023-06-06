@@ -10,6 +10,7 @@ describe('test contact us on form via automation test store', () =>{
     
         cy.visit('https://www.automationteststore.com/')
          //cy.get('.info_links_footer > :nth-child(5) > a').click()
+         //add a promise to get the link text after the link has been clicked.
         cy.xpath("//a[contains(@href, 'contact')]").click().then(function(linkText){
             cy.log('link text is: ' + linkText.text())
         })
