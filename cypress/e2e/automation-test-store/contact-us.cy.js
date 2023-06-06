@@ -9,8 +9,10 @@ describe('test contact us on form via automation test store', () =>{
         //cypress code sample
     
         cy.visit('https://www.automationteststore.com/')
-        //cy.get('.info_links_footer > :nth-child(5) > a').click()
-        cy.xpath("//a[contains(@href, 'contact')]").click()
+         //cy.get('.info_links_footer > :nth-child(5) > a').click()
+        cy.xpath("//a[contains(@href, 'contact')]").click().then(function(linkText){
+            cy.log('link text is: ' + linkText.text())
+        })
         cy.get('#ContactUsFrm_first_name').type('Jose')
         cy.get('#ContactUsFrm_email').type('jose@yopmail.com')
         cy.get('#ContactUsFrm_email').should('have.attr', 'name', 'email')
