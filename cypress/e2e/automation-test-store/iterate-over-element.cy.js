@@ -24,12 +24,6 @@ describe('iterate over elements', () =>{
 
     })
 
-    //challenge
-    it.only('iterate through the products on homepage', () => {
-        cy.visit('https://www.automationteststore.com/')
-        cy.get('.thumbnail').each(($el, index, $list) => {
-            cy.log("index: " + " : " + $el.text())
-        })
-    })
+
     
 })
