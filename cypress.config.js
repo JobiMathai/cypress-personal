@@ -13,7 +13,7 @@ module.exports = defineConfig({
 module.exports = {
   'projectId': '4b7344',
   e2e: {
-    baseUrl: 'https://localhost:8080',
+    baseUrl: 'http://127.0.0.1:3000',
     specPattern: "cypress/e2e/**/*.{js,jsx,ts,tsx,feature}"
   },
   env:{
